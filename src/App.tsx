@@ -13,7 +13,6 @@ import { SettingsPage } from './pages/SettingsPage';
 import { ToastProvider } from './components/ui/Toast';
 import { usePwaInstall } from './hooks/usePwaInstall';
 import { PwaInstallModal } from './components/ui/PwaInstallModal';
-import { NetlifyBadge } from './components/ui/NetlifyBadge';
 
 export const AppContent: React.FC = () => {
   // Navigation state
@@ -178,9 +177,6 @@ export const AppContent: React.FC = () => {
           setCurrentTab(tab);
         }}
       />
-
-      {/* Floating Clean Netlify Badge */}
-      <NetlifyBadge />
 
       {/* PWA Desktop Install Modal */}
       <PwaInstallModal

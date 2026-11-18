@@ -8,6 +8,7 @@ import {
   MonitorDown,
 } from 'lucide-react';
 import { NavigationTab } from '../../types';
+import { AppLogo } from '../ui/AppLogo';
 
 interface SidebarProps {
   currentTab: NavigationTab;
@@ -36,11 +37,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     <aside className="hidden md:flex flex-col w-64 bg-white border-r border-[#EEEAF7] shrink-0 min-h-[calc(100vh-4rem)] p-4">
       {/* Brand box */}
       <div className="flex items-center gap-3 px-3 py-3.5 mb-4 rounded-2xl bg-gradient-to-br from-[#FAF9FF] to-[#DDD6FE]/30 border border-[#EEEAF7]">
-        <img
-          src="/icon-192.png"
-          alt="Logo PengeluaranKu"
-          className="w-10 h-10 rounded-xl shadow-xs border border-white/60"
-        />
+        <AppLogo size={40} />
         <div>
           <h2 className="font-bold text-sm text-[#27243A]">PengeluaranKu</h2>
           <p className="text-xs text-[#88839A]">Catatan Keuangan</p>

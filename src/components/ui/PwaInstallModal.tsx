@@ -1,6 +1,7 @@
 import React from 'react';
 import { Modal } from './Modal';
 import { Monitor, Smartphone, Download, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { AppLogo } from './AppLogo';
 
 interface PwaInstallModalProps {
   isOpen: boolean;
@@ -20,11 +21,7 @@ export const PwaInstallModal: React.FC<PwaInstallModalProps> = ({
       <div className="space-y-5">
         {/* App Logo & Header Banner */}
         <div className="flex items-center gap-3 p-4 rounded-2xl bg-gradient-to-br from-[#F5F3FF] to-[#EDE9FE] border border-[#DDD6FE]">
-          <img
-            src="/icon-192.png"
-            alt="PengeluaranKu Logo"
-            className="w-14 h-14 rounded-2xl shadow-md border-2 border-white shrink-0"
-          />
+          <AppLogo size={56} className="rounded-2xl shadow-md border-2 border-white shrink-0" />
           <div>
             <h4 className="font-bold text-base text-[#27243A]">PengeluaranKu Desktop App</h4>
             <p className="text-xs text-[#88839A] leading-relaxed">

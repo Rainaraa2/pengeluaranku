@@ -22,6 +22,7 @@ import {
 import { useToast } from '../components/ui/Toast';
 import { Modal } from '../components/ui/Modal';
 import { formatDateReadable } from '../utils/formatters';
+import { AppLogo } from '../components/ui/AppLogo';
 
 interface SettingsPageProps {
   transactions: Transaction[];
@@ -214,11 +215,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
       <div className="bg-white p-5 rounded-2xl border border-[#EEEAF7] shadow-xs space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="flex items-center gap-3.5">
-            <img
-              src="/icon-192.png"
-              alt="Logo PengeluaranKu"
-              className="w-12 h-12 rounded-2xl shadow-sm border border-purple-100 shrink-0"
-            />
+            <AppLogo size={48} className="rounded-2xl shadow-sm border border-purple-100 shrink-0" />
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="text-base font-bold text-[#27243A]">Aplikasi Desktop (PWA)</h3>

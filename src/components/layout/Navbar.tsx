@@ -1,6 +1,7 @@
 import React from 'react';
-import { Sparkles, Calendar, MonitorDown } from 'lucide-react';
+import { Calendar, MonitorDown } from 'lucide-react';
 import { MONTH_NAMES } from '../../utils/formatters';
+import { AppLogo } from '../ui/AppLogo';
 
 interface NavbarProps {
   currentTab: string;
@@ -40,11 +41,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Left: Brand / Title */}
         <div className="flex items-center gap-3">
-          <img
-            src="/icon-192.png"
-            alt="Logo PengeluaranKu"
-            className="w-9 h-9 rounded-xl shadow-xs border border-white/40"
-          />
+          <AppLogo size={36} />
           <div>
             <h1 className="text-lg font-bold text-white tracking-tight drop-shadow-xs">
               PengeluaranKu
